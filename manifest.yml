@@ -1,0 +1,21 @@
+---
+applications:
+
+- name: cloud-sdk-test
+  memory: 1024M
+  timeout: 300
+  routes:
+    - route: https://cloud-sdk-test-timely-genet.cfapps.eu10.hana.ondemand.com
+  random-route: false
+  path: application/target/cloud-sdk-test-application.war
+  buildpacks:
+    - sap_java_buildpack
+  env:
+    TARGET_RUNTIME: tomee7
+    SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: INFO}'
+    JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:128m..'
+  services:
+#  - my-application-logs
+#  - my-xsuaa
+  - my-destination
+#  - my-connectivity

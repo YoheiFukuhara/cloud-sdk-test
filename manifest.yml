@@ -4,9 +4,7 @@ applications:
 - name: cloud-sdk-test
   memory: 1024M
   timeout: 300
-  routes:
-    - route: https://cloud-sdk-test-timely-genet.cfapps.eu10.hana.ondemand.com
-  random-route: false
+  random-route: true
   path: application/target/cloud-sdk-test-application.war
   buildpacks:
     - sap_java_buildpack

@@ -1,7 +1,6 @@
 package com.sap.cloud.sdk;
 
 import com.google.gson.Gson;
-
 import com.sap.cloud.sdk.services.recastai.RecastWebhookResponseWrapper;
 import com.sap.cloud.sdk.services.recastai.botresponses.*;
 import org.slf4j.Logger;

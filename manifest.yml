@@ -18,4 +18,4 @@ applications:
 #  - my-application-logs
 #  - my-xsuaa
   - my-destination
-#  - my-connectivity
+  - my-connectivity
